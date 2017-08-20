@@ -24,7 +24,7 @@
                             </ol>
                         </div>
                         <div class="box-footer">
-                            <button type="submit" class="btn btn-primary btn-lg">一键升级</button>
+                            <!-- <button type="submit" class="btn btn-primary btn-lg">一键升级</button> -->
                         </div>
                     </form>
                 </div>
@@ -42,7 +42,7 @@
                             <p>主要用户校准用户的标签统计数据，新安装的程序不需要执行</p>
                         </div>
                         <div class="box-footer">
-                            <button type="submit" class="btn btn-primary btn-lg">同步用户话题数据</button>
+                            <!-- <button type="submit" class="btn btn-primary btn-lg">同步用户话题数据</button> -->
                         </div>
                     </form>
                 </div>

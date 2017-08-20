@@ -148,7 +148,11 @@
             @endif
         </div>
         <div class="copyright mt-10">
-             ©2009-{{ gmdate('Y') }} {{ Setting()->get('website_name') }} Powered By <a href="http://www.tipask.com" target="_blank">{{ Config('tipask.version') }}</a> Release {{ config('tipask.release') }}
+             ©2009-{{ gmdate('Y') }} {{ Setting()->get('website_name') }} 
+             <!--
+             Powered By <a href="http://www.tipask.com" target="_blank">{{ Config('tipask.version') }}</a> 
+             Release {{ config('tipask.release') }}
+             -->
         </div>
     </div>
 </footer>
