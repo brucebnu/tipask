@@ -8,8 +8,10 @@
     <title>@yield('seo_title',Setting()->get('website_name'))</title>
     <meta name="keywords" content="@yield('seo_keyword',parse_seo_template('seo_index_keyword','default'))" />
     <meta name="description" content="@yield('seo_description',parse_seo_template('seo_index_description','default'))" />
-    <meta name="author" content="Tipask Team" />
-    <meta name="copyright" content="2016 tipask.com" />
+
+    <link rel="shortcut icon" href="{{ asset('/big-favicon.ico') }}" type="image/x-icon">
+    <link rel="icon" href="{{ asset('/big-favicon.ico') }}" type="image/x-icon">
+
     {!! Setting()->get('website_header') !!}
     <!-- Bootstrap -->
     <link href="{{ asset('/static/css/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet" />

@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>@yield('title') - Tipask管理后台</title>
+    <title>@yield('title') - 管理后台</title>
+    <link rel="shortcut icon" href="{{ asset('/big-favicon.ico') }}" type="image/x-icon">
+    <link rel="icon" href="{{ asset('/big-favicon.ico') }}" type="image/x-icon">
     <!-- Bootstrap 3.3.2 -->
     <link href="{{ asset('/static/css/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" />
     <link href="{{ asset('/static/css/icheck/all.css') }}" rel="stylesheet" type="text/css" />
