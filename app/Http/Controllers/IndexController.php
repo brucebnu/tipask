@@ -168,8 +168,13 @@ class IndexController extends Controller
 
         $categories = load_categories('tags');
 
-        $topics = Tag::where("category_id","=",$currentCategoryId)->orderBy('followers','DESC')->paginate(20);
-        return view('theme::home.topic')->with(compact('topics','categories','currentCategoryId','categorySlug'));
+        if ($currentCategoryId > 0 ){
+            $topics = Tag::where("category_id","=",$currentCategoryId)->orderBy('followers','DESC')->paginate(20);
+        }else{
+            $topics = Tag::where("category_id",">=",0)->orderBy('followers','DESC')->paginate(20);
+        }
+
+        return view('theme::home.topic')->with(compact('category','topics','categories','currentCategoryId','categorySlug'));
     }
 
 
